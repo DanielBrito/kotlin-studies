@@ -17,3 +17,9 @@ Projeto do curso [Kotlin e Spring do ZERO ao Avançado](https://www.udemy.com/co
 - IntelliJ IDEA
 - MySQL Workbench
 - Postman
+- Swagger
+
+## Referências
+
+- [Swagger documentation for your Spring Boot API with Springfox](https://blog.mestwin.net/swagger-documentation-for-your-spring-boot-api-with-springfox/)
+

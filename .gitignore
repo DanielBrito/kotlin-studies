@@ -1,0 +1,47 @@
+# Compiled output
+/bin/
+/build/
+/out/
+
+# IDE-specific files
+.idea/
+.gradle/
+*.iml
+
+# Gradle wrapper files
+gradle/
+gradlew
+gradlew.bat
+gradle.properties
+gradle-local.properties
+
+# Eclipse-specific files
+.settings/
+.classpath
+.project
+
+# Intellij-specific files
+*.ipr
+*.iws
+*.ids
+
+# macOS-specific files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+
+# User-specific files
+*.history
+*.prefs
+
+# Kotlin metadata
+*.kotlin_metadata
+
+# Compiled Kotlin
+*.kotlin_module
+
+# Maven-specific files
+target/
+

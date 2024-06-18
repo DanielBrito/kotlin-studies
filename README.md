@@ -18,3 +18,6 @@ These experiments cover different tools and concepts related to Kotlin from my [
 - Spring Framework
 - REST APIs
 
+## :card_file_box: Resources
+
+- [Kotlin Docs](https://kotlinlang.org/docs/home.html)

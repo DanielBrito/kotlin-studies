@@ -5,5 +5,7 @@ class HelloWorld {
 }
 
 fun main() {
-    println(HelloWorld().start())
+    val helloWorld = HelloWorld()
+
+    println(helloWorld.start())
 }

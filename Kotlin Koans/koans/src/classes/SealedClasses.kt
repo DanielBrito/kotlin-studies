@@ -1,23 +1,23 @@
 package classes
 
-fun eval(expr: Expr): Int =
+fun eval(expr: ExprV2): Int =
     when (expr) {
-        is Num -> expr.value
-        is Sum -> eval(expr.left) + eval(expr.right)
+        is NumV2 -> expr.value
+        is SumV2 -> eval(expr.left) + eval(expr.right)
     }
 
-sealed class Expr
+sealed class ExprV2
 
-class Num(
+class NumV2(
     val value: Int,
-) : Expr()
+) : ExprV2()
 
-class Sum(
-    val left: Expr,
-    val right: Expr,
-) : Expr()
+class SumV2(
+    val left: ExprV2,
+    val right: ExprV2,
+) : ExprV2()
 
 fun main() {
-    println(eval(Num(1)))
-    println(eval(Sum(Num(1), Num(2))))
+    println(eval(NumV2(1)))
+    println(eval(SumV2(NumV2(1), NumV2(2))))
 }

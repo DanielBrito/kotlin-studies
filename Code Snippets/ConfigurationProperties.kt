@@ -1,5 +1,4 @@
 /*
-
 application.yaml
 
 segmentation:
@@ -8,11 +7,10 @@ segmentation:
     - BEAUTY
     - CLOTHING
     - SPORTS
-
 */
 
-import org.springframework.boot.context.properties.ConfigurationProperties
-import org.springframework.stereotype.Component
+/*
+ProductType.kt
 
 enum class ProductType(val value: String) {
     TECHNOLOGY("Technology"),
@@ -20,6 +18,10 @@ enum class ProductType(val value: String) {
     CLOTHING("Clothing"),
     SPORTS("Sports)
 }
+*/
+
+import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.stereotype.Component
 
 @Component
 @ConfigurationProperties(prefix = "segmentation")

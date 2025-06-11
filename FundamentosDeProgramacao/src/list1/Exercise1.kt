@@ -9,6 +9,7 @@ fun main() {
     for(i in 0 until numberOfGrades) {
         print("Enter grade #${i+1}: ")
         val grade = readLine()?.toDoubleOrNull() ?: return println("Invalid grade")
+
         print("Enter weight for grade #${i+1}: ")
         val weight = readLine()?.toDoubleOrNull() ?: return println("Invalid weight")
 

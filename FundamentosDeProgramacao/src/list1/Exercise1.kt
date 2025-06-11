@@ -3,17 +3,17 @@ package list1
 fun main() {
     val numberOfGrades = 3
 
-    val grades = mutableListOf<Double>()
-    val weights = mutableListOf<Double>()
+    val grades = DoubleArray(numberOfGrades)
+    val weights = DoubleArray(numberOfGrades)
 
-    for(i in 1 .. numberOfGrades) {
-        print("Enter grade #$i: ")
+    for(i in 0 until numberOfGrades) {
+        print("Enter grade #${i+1}: ")
         val grade = readLine()?.toDoubleOrNull() ?: return println("Invalid grade")
-        print("Enter weight for grade #$i: ")
+        print("Enter weight for grade #${i+1}: ")
         val weight = readLine()?.toDoubleOrNull() ?: return println("Invalid weight")
 
-        grades.add(grade)
-        weights.add(weight)
+        grades[i] = grade
+        weights[i] = weight
     }
 
     val weightedSum = grades.zip(weights).sumOf { (g, w) -> g * w }

@@ -6,11 +6,11 @@ fun main() {
     val grades = DoubleArray(numberOfGrades)
     val weights = DoubleArray(numberOfGrades)
 
-    for(i in 0 until numberOfGrades) {
-        print("Enter grade #${i+1}: ")
+    for (i in 0 until numberOfGrades) {
+        print("Enter grade #${i + 1}: ")
         val grade = readLine()?.toDoubleOrNull() ?: return println("Invalid grade")
 
-        print("Enter weight for grade #${i+1}: ")
+        print("Enter weight for grade #${i + 1}: ")
         val weight = readLine()?.toDoubleOrNull() ?: return println("Invalid weight")
 
         grades[i] = grade

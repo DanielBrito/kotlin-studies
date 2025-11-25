@@ -1,4 +1,11 @@
-// Sets Jackson configuration for external services communication etc. based on specific requirements
+// Sets configuration for external services communication based on specific requirements
+
+@Configuration
+class RestClientConfiguration {
+
+    @Bean
+    fun restClient(builder: RestClient.Builder): RestClient = builder.build()
+}
 
 @Configuration
 class JacksonConfiguration {
